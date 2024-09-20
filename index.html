@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd Assignment</title>
+</head>
+<body>
+    <header>
+        <h1>Star Wars The Clone Wars</h1>
+    </header>
+
+    <img src="images/Star_Wars_The_Clone_Wars.webp" alt="Star Wars The Clone Wars" usemap="#image-map">
+    <map name="image-map">
+        <area target="_blank" alt="Star Wars title" title="Star Wars title" href="https://en.wikipedia.org/wiki/Star_Wars:_The_Clone_Wars_(2008_TV_series)" coords="34,33,560,365" shape="rect">
+        <area target="_blank" alt="Yoda" title="Yoda" href="https://en.wikipedia.org/wiki/Yoda" coords="894,471,68" shape="circle">
+        <area target="_blank" alt="Clone Troopers" title="Clone Troopers" href="https://en.wikipedia.org/wiki/Clone_trooper" coords="695,599,0,391" shape="rect">
+        <area target="_blank" alt="Anakin Skywalker" title="Anakin Skywalker" href="https://en.wikipedia.org/wiki/Darth_Vader" coords="796,73,912,399" shape="rect">
+        <area target="_blank" alt="Ahsoka Tano" title="Ahsoka Tano" href="https://en.wikipedia.org/wiki/Ahsoka_Tano" coords="1020,338,1109,586" shape="rect">
+        <area target="_blank" alt="Obi One Kenobi" title="Obi One Kenobi" href="https://en.wikipedia.org/wiki/Obi-Wan_Kenobi_(miniseries)" coords="916,52,1079,341" shape="rect">
+    </map>
+
+    <form id="survey" action="" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+        <p>Enter your favorite Star Wars Character: </p>
+
+        <input type="radio" id="Anakin_Skywalker" name="fav_character" value="Anakin">
+        <label for="Anakin">Anakin Skywalker</label><br>
+        <input type="radio" id="Obi_Wan_Kenobi" name="fav_character" value="Obi">
+        <label for="Obi">Obi Wan Kenobi</label><br>
+        <input type="radio" id="Ahsoka_Tano" name="fav_character" value="Ahsoka">
+        <label for="Ahsoka">Ahsoka Tano</label><br><br>
+
+        <label for="date_Watched">Date you watched Star Wars: </label>
+        <input type="date" id="birthday" name="birthday"><br>
+
+        <label for="clone_bat">Favorite Clone Battalion: </label><br>
+        <select id="clone_bat" name="clone_bat"><br>
+            <option value="501">501st Legion</option>
+            <option value="104">104th Battalion</option>
+            <option value="327">327th Star Corps</option>
+            <option value="212">212th Attack Battalion</option>
+            <option value="41">41st Elite Corps</option>
+        </select><br>
+
+        <label for="message">Favorite movie and why: </label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message..."></textarea><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Episode: </th>
+                <th>Title: </th>
+                <th>Director: </th>
+                <th>Realse Date: </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Episode I</td>
+                <td>The Phantom Menace</td>
+                <td rowspan="4">George Lucas</td>
+                <td>May 19, 1999</td>
+            </tr>
+            <tr>
+                <td>Episode II</td>
+                <td>Attack of the Clones </td>
+                <td>May 16, 2002</td>
+            </tr>
+            <tr>
+                <td>Episode III</td>
+                <td>Revenge of the Sith</td>
+                <td>May 19, 2005</td>
+            </tr>
+            <tr>
+                <td>Episode IV</td>
+                <td>A New Hope</td>
+                <td>May 25, 1977</td>
+            </tr>
+            <tr>
+                <td>Episode V</td>
+                <td>The Empire Strikes Back</td>
+                <td>Irvin Kershner</td>
+                <td>May 21, 1980</td>
+            </tr>
+            <tr>
+                <td>Episode VI</td>
+                <td>Return of the Jedi</td>
+                <td>Richard Marquand</td>
+                <td>May 25, 1983</td>
+            </tr>
+            <tr>
+                <td>Episode VII</td>
+                <td>The Force Awakens</td>
+                <td>J.J. Abrams</td>
+                <td>December 18, 2015</td>
+            </tr>
+            <tr>
+                <td>Episode VIII</td>
+                <td>The Last Jedi</td>
+                <td>Rian Johnson</td>
+                <td>December 15, 2017</td>
+            </tr>
+            <tr></tr>
+                <td>Episode IX</td>
+                <td>The Rise of Skywalker</td>
+                <td>J.J. Abrams</td>
+                <td>December 20, 2019</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Star Wars Movies</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
